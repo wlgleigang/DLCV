@@ -3,7 +3,7 @@ import dlib
 #运用现成的脸部关键点检测的库
 detector = dlib.get_frontal_face_detector() #使用默认的人类识别器模型
 predictor = dlib.shape_predictor(
-    "D:\pychar_projects\dnc-master\shape_predictor_68_face_landmarks.dat"
+    "D:./shape_predictor_68_face_landmarks.dat"
 )
 def discern(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
